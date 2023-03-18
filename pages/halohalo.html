@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo-halo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container-home" id="myTopnav">
+        <a href="../index.html">Home</a>
+        <a href="../pages/Login.html">Login</a>
+        <a href="../pages/Aboutme.html">About Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="omelette-container">
+        <section>
+
+            <div>
+                <img src="../images/frenchfries.jpg" alt="Cant load image.">
+
+                <h1><a href="pages/FrenchFries.html">French Fries</a></h1>
+            </div>
+
+            <div>
+                <p>
+                    <strong> Ingredients: </strong>
+                    <ul>
+                        <li>2 cups of shaved ice</li>
+                        <li>1 ripe large banana</li>
+                        <li>1 cup young shredded coconut, fresh or bottled</li>
+                        <li>1/2 cup sweet corn or chickpeas (garbanzos)</li>
+                        <li>2 cups evaporated milk</li>
+                        <li>1 cup firm gelatin set into a gel and cut into 1/2 inch cubes</li>
+                        <li>2 ripe mangoes</li>
+                        <li>1 cup ripe jackfruit</li>
+                        <li>1 cup cooked sweet yams or (ube halaya)</li>
+                        <li>4 scoops of favorite ice cream</li>
+                        <li>1/2 cup rice pop</li>
+                    </ul>
+                    <strong> Instructions: </strong>
+                    <ol>
+                        <li>Peel mangoes and slice into half-inch cubes.</li>
+                        <li>Divide each ingredient into 4 equal parts. Get 4 tall glasses, then place each ingredients layer by layer.</li>
+                        <li>Put the one-half cup of shaved ice to each glass.</li>
+                        <li>Pour a quarter of milk evap over shaved ice to each glass.</li>
+                        <li>Put a scoop of ice cream on top</li>
+                        <li>Drizzle some nuts or rice crispies on top of the ice cream.</li>
+                    </ol>
+                </p>
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>STI College of Davao &copy All rights reserved</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "container-home") {
+            x.className += " responsive";
+          } else {
+            x.className = "container-home";
+          }
+        }
+    </script>
+</body>
+</html>

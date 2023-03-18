@@ -9,60 +9,61 @@
     
 </head>
 <body>
-    <nav>
-        <div class="container-home">
-            <h1>HulyoRecipes</h1>
-            <a href="pages/Aboutme.html">About Me</a>
-            <a href="pages/Login.html">Login</a>
-            <a href="pages/Register.html">Register</a>
-            <a href="index.html">Home</a>
-        </div>
-    </nav>
+    <div class="container-home" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="pages/Login.html">Login</a>
+        <a href="pages/Aboutme.html">About Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    <div class="menu-container">
+        <section>
+            <img src="images/omelette.jpg" alt="Cant load image.">
 
-    <section class="con-main">
-        <div >
-            <img class="item" src="images/omelette.sniipadlarge-1200097848" alt="Cant load image">
-        </div>
-
-        <div>
             <h1><a href="pages/Omelette.html">Egg Omelette</a></h1>
+        </section>
 
-        </div>
-    </section>
+        <section>
+          <img src="images/frenchfries.jpg" alt="Cant load image.">
 
-    <section class="con-main">
-        <div>
-            <h1>French Fries</h1>
-            <p>
-                <strong> Ingredients: </strong>
-                <ul>
-                    <li>1 kg Potatoes</li>
-                    <li></li>
-                    <li>Salt</li>
-                    <li>MSG</li>
-                    <li>Pepper powder</li>
-                </ul>
-                <strong> Instructions: </strong>
-                <ol>
-                    <li>Pre heat pan until smoking hot. Then turn down the heat to low.</li>
-                    <li>Add olive oil (NOTE: Hot pan plus cold oil prevents the eggs from sticking in the pan.)</li>
-                    <li>Add the whisked eggs in the pan. Make sure to scatter it around</li>
-                    <li>Add salt, MSG and pepper powder(optional) to taste.</li>
-                    <li>Wait 2-3 minuntes then flip the omelette.</li>
-                    <li>After 1-2 minutes, remove then serve immediately.</li>
-                </ol>
-            </p>
-        </div>
+          <h1><a href="pages/FrenchFries.html">French Fries</a></h1>
+      </section>
 
-        <div lass="con-main">
-            <img class="item" src="images/Homemade-French-Fry-Recipe--700x838.jpg" alt="Cant load image">
-        </div>
-    </section>
+        <section>
+            <img src="images/sinigang.jpg" alt="Cant load image.">
+
+            <h1><a href="pages/Sinigang.html">Pork Sinigang</a></h1>
+        </section>
+
+        <section>
+            <img src="images/pinakbet.jpg" alt="Cant load image.">
+
+            <h1><a href="pages/pinakbet.html">Pinakbet</a></h1>
+        </section>
+
+        <section>
+          <img src="images/halohalo.jpg" alt="Cant load image.">
+
+          <h1><a href="pages/halohalo.html">Halo-halo</a></h1>
+      </section>
+    </div>
 
 
     <footer>
         <p>STI College of Davao &copy All rights reserved</p>
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "container-home") {
+            x.className += " responsive";
+          } else {
+            x.className = "container-home";
+          }
+        }
+    </script>
 
 </body>
 </html>
